@@ -15,21 +15,43 @@
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body class="bg-cream h-screen flex justify-center items-center">
-    <main class="mx-4 my-7 rounded-[10px] bg-white max-w-[343px]">
+    <main
+      class="mx-4 my-7 rounded-[10px] bg-white min-w-[343px] max-w-[600px] flex flex-col md:flex-row"
+    >
       <div
-        class="bg-mobile max-h-[450px] bg-center bg-cover bg-no-repeat"
+        class="bg-mobile md:bg-desktop w-full basis-1/2 max-h-[450px] min-h-[240px] bg-center bg-cover bg-no-repeat rounded-t-[10px] md:rounded-tr-none md:rounded-bl-[10px]"
       ></div>
-      <div class="p-6">
-        <p class="">Perfume</p>
-        <h1 class="">Gabrielle Essence Eau De Parfum</h1>
-        <p class="">
+      <div class="p-6 md:p-8 basis-1/2">
+        <p
+          class="font-medium text-xs font-montserrat text-dark-grayish-blue tracking-[5px] uppercase mb-3 md:mb-[20px]"
+        >
+          Perfume
+        </p>
+        <h1
+          class="font-fraunces font-bold text-[32px] leading-8 text-very-dark-blue mb-4 md:mb-6"
+        >
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p
+          class="text-dark-grayish-blue font-montserrat text-sm font-medium leading-[23px] mb-6 md:mb-7"
+        >
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
-        <p class="">$149.99 <span class="">$169.99</span></p>
-        <button class="">
+        <p
+          class="text-dark-cyan font-fraunces text-[32px] leading-8 font-bold gap-5 flex items-center mb-5 md:mb-[30px]"
+        >
+          $149.99
+          <span
+            class="text-dark-grayish-blue font-montserrat text-[13px] font-medium leading-[23px] line-through"
+            >$169.99</span
+          >
+        </p>
+        <button
+          class="flex items-center justify-center gap-2 bg-dark-cyan text-white w-full py-4 px-[92px] md:px-[62px] rounded-lg hover:bg-[#1a4032] transition-colors"
+        >
           <img src="./images/icon-cart.svg" alt="cart icon" />
-          <span class="">Add to Cart</span>
+          <span class="font-montserrat text-sm font-bold">Add to Cart</span>
         </button>
       </div>
     </main>
